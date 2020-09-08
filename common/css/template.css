@@ -1,0 +1,92 @@
+@charset 'utf-8';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: radial-gradient(#fffffa 70%, rgba(240, 240, 240, 0.7) 90%) fixed;
+}
+
+body {
+    font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", "Meiryo",
+        "ＭＳ ゴシック", sans-serif;
+    font-size: 14px;
+}
+
+body.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    text-align: left;
+}
+
+td,
+th {
+    font-weight: 400;
+}
+
+td {
+    padding: 0 30px 15px 20px;
+}
+
+tr {
+    vertical-align: top;
+}
+
+.head-nav {
+    width: 100vw;
+}
+
+.box_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+    margin: auto;
+    font-family: "Fredericka the Great", cursive;
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+    padding-top: 15px;
+}
+
+.box_nav a {
+    color: rgba(87, 87, 87, 0.822);
+}
+
+.nav_focus::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 40px;
+    height: 5px;
+    background-image: url("../img/nav_line.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav_focus a {
+    color: #85d8b3;
+}
+
+.box_nav li:hover {
+    opacity: 0.5;
+}
